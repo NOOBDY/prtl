@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start": "vinxi start",
+    "format": "prettier . --check",
+    "lint": "eslint"
   },
   "dependencies": {
     "@solidjs/router": "^0.14.1",
@@ -17,5 +19,14 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.0.1",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-solid": "^0.14.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6"
   }
 }
