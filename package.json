@@ -6,7 +6,9 @@
     "build": "vinxi build",
     "start": "vinxi start",
     "format": "prettier . --check",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview": "pnpm build && wrangler pages dev",
+    "deploy": "pnpm build && wrangler pages deploy"
   },
   "dependencies": {
     "@kobalte/core": "^0.13.4",
@@ -32,6 +34,7 @@
     "eslint-plugin-solid": "^0.14.1",
     "globals": "^15.9.0",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.6"
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "wrangler": "^3.70.0"
   }
 }
